@@ -7,9 +7,9 @@ wget http://archive.cloudera.com/kudu/ubuntu/xenial/amd64/kudu/cloudera.list && 
 apt-get update && \
 apt-get -y install kudu kudu-master kudu-tserver libkuduclient0 libkuduclient-dev
 
-VOLUME /var/lib/kudu/master /var/lib/kudu/tserver
+#VOLUME /var/lib/kudu/master /var/lib/kudu/tserver
 
-COPY docker-entrypoint.sh /
-ENTRYPOINT ["/docker-entrypoint.sh"]
+#COPY docker-entrypoint.sh /
+#ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 8050 8051 7050 7051
-CMD ["help"]
+#CMD ["help"]
