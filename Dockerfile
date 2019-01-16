@@ -7,7 +7,8 @@ RUN apt-get -y install autoconf automake curl flex g++ gcc gdb git \
 git clone https://github.com/apache/kudu \
 cd kudu \
 thirdparty/build-if-necessary.sh \
-mkdir -p build/release \
+mkdir build \
+mkdir build/release \
 cd build/release \
 ../../thirdparty/installed/common/bin/cmake \
   -DCMAKE_BUILD_TYPE=release \
